@@ -10,6 +10,20 @@
 
 [![Build](https://github.com/isidore/SuppressSuccess/actions/workflows/build.yml/badge.svg)](https://github.com/isidore/SuppressSuccess/actions/workflows/build.yml)
 
+## Why 
+Too often we pollute AI with reams of output from our builds.
+While this is needed to debug failures, it is clutter when the build passes.
+suppress_success is an easy way to get the best of both.
+
+## Quick start
+
+```bash
+suppress_success echo "Hello"                    # prints "Success"
+suppress_success --message "Hi" echo "Hello"     # prints "Hi"
+suppress_success sh -c 'echo "Hello" && exit 1'  # prints "Hello", exits 1
+```
+
+
 ## Installation
 
 Download the latest binary from [GitHub Releases](https://github.com/lexler/suppress_success/releases).
@@ -32,15 +46,6 @@ mv suppress_success /usr/local/bin/
 # Windows
 curl -L https://github.com/lexler/suppress_success/releases/latest/download/suppress_success-windows.exe -o suppress_success.exe
 ```
-
-## Quick start
-
-```bash
-suppress_success echo "Hello"                    # prints "Success"
-suppress_success --message "Hi" echo "Hello"     # prints "Hi"
-suppress_success sh -c 'echo "Hello" && exit 1'  # prints "Hello", exits 1
-```
-
 
 ## Usage
 
