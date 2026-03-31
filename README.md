@@ -14,13 +14,19 @@ Download the latest binary from [GitHub Releases](https://github.com/lexler/supp
 
 ```bash
 # Mac Apple Silicon
-curl -L https://github.com/lexler/suppress_success/releases/latest/download/suppress_success-apple-silicon -o suppress_success
+curl -L https://github.com/lexler/suppress_success/releases/latest/download/suppress_success-mac-apple-silicon -o suppress_success
+chmod +x suppress_success
+mv suppress_success /usr/local/bin/
 
 # Mac Intel
 curl -L https://github.com/lexler/suppress_success/releases/latest/download/suppress_success-mac-intel -o suppress_success
-
 chmod +x suppress_success
 mv suppress_success /usr/local/bin/
+```
+
+```powershell
+# Windows
+curl -L https://github.com/lexler/suppress_success/releases/latest/download/suppress_success-windows.exe -o suppress_success.exe
 ```
 
 ## Quick start
